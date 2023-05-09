@@ -24,8 +24,13 @@ if [ -z "$APIGEE_ENV" ]; then
         exit
 fi
 
-if [ -z "$BQ_DATASET" ]; then
-        echo "No BQ_DATASET variable set"
+if [ -z "$BQ_TABLE" ]; then
+        echo "No BQ_TABLE variable set"
+        exit
+fi
+
+if [ -z "$APIGEE_HOST" ]; then
+        echo "No APIGEE_HOST variable set"
         exit
 fi
 

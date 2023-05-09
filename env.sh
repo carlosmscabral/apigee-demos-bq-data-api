@@ -14,7 +14,9 @@
 # limitations under the License.
 
 export PROJECT="<GCP_PROJECT_ID>"
-export BQ_DATASET="<BQ_DATASET>" # format:  project_id.dataset_name.table_name
+export BQ_TABLE="<BQ_TABLE>" # format:  project_id.dataset_name.table_name
 export APIGEE_ENV="<APIGEE_ENVIRONMENT_NAME>"
+export APIGEE_HOST="<APIGEE_HOST>" # without http:// or https://
 
+gcloud auth login
 gcloud config set project $PROJECT
